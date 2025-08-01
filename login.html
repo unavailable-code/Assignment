@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+    <div id="main">
+    <form method="post" autocomplete="off">
+
+        <div id="sub1" class="visible ">
+            <h3 style="margin-bottom: 20px;">Welcome!</h3>
+             <input type="text" name="username" placeholder="👤 Username" class="textbox" id="username" >
+        <input type="password" name="password" placeholder="🔒 Password" class="textbox" id="password" >
+        <input type="text" name="phone" placeholder="📞 Phone Number" class="textbox" id="phone" >
+        <input type="email" name="email" placeholder="📧 Email" class="textbox" id="email" >
+    <button onclick="changeOption()" type="button">Next ➡️</button>
+        </div>
+    
+
+        <div id="sub2" class=" hidden">
+            <h3>More Info</h3>
+
+            <div>
+
+    <input type="text" name="student_name" placeholder="📝 Full Name" class="textbox" id="student_name" >
+    </div>
+
+  
+    <input list="exam-options" name="exam_interested" id="exam_interested" placeholder="📘 Exam Interested" >
+    
+    <datalist id="exam-options">
+        <option value="JEE">
+        <option value="NEET">
+        <option value="SSC">
+        <option value="Banking">
+        <option value="CA">
+        <option value="10th">
+        <option value="12th">
+        <option value="UPSC">
+        <option value="Other">
+    </datalist>
+   
+
+
+    <select name="gender" id="gender" >
+        <option value="">⚧️ Gender</option>
+          <option value="Male">♂️ Male</option>
+          <option value="Female">♀️ Female</option>
+          <option value="Other">⚧️ Other</option>
+    </select>
+  
+
+ 
+    <input type="text" name="pincode" placeholder="📍 Pincode"" class="textbox" id="pincode" >
+   
+    <!-- Submit -->
+     <div id="buts">
+     <button type="button" onclick="changeOption()">⬅️ Back</button>
+    <button type="submit">Register 🚀</button>
+    </div>
+    
+    </div>
+    
+</form>
+</div>
+<script src="login.js"></script>
+
+
+</body>
+</html>
